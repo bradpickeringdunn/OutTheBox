@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTB.Localization", "OTB.Localization\OTB.Localization.csproj", "{31AB146D-7A6D-44A1-86D3-F7A8FBBB9614}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTB.Common", "OTB.Common\OTB.Common.csproj", "{26FD68A8-D6C7-4C52-8CAA-7A1855012495}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTB.Common.Tests", "OTB.Common.Tests\OTB.Common.Tests.csproj", "{76945DB9-AD67-4B38-AC85-728FD17A2F3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31AB146D-7A6D-44A1-86D3-F7A8FBBB9614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31AB146D-7A6D-44A1-86D3-F7A8FBBB9614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31AB146D-7A6D-44A1-86D3-F7A8FBBB9614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31AB146D-7A6D-44A1-86D3-F7A8FBBB9614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26FD68A8-D6C7-4C52-8CAA-7A1855012495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26FD68A8-D6C7-4C52-8CAA-7A1855012495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26FD68A8-D6C7-4C52-8CAA-7A1855012495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26FD68A8-D6C7-4C52-8CAA-7A1855012495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76945DB9-AD67-4B38-AC85-728FD17A2F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76945DB9-AD67-4B38-AC85-728FD17A2F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76945DB9-AD67-4B38-AC85-728FD17A2F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76945DB9-AD67-4B38-AC85-728FD17A2F3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
