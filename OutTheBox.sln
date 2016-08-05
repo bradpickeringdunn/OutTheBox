@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTB.Common", "OTB.Common\OT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTB.Common.Tests", "OTB.Common.Tests\OTB.Common.Tests.csproj", "{76945DB9-AD67-4B38-AC85-728FD17A2F3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTB.Localization.Tests", "OTB.Localization.Tests\OTB.Localization.Tests.csproj", "{F450F78D-75F5-445F-BC7D-9B468CC8C27C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{76945DB9-AD67-4B38-AC85-728FD17A2F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76945DB9-AD67-4B38-AC85-728FD17A2F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76945DB9-AD67-4B38-AC85-728FD17A2F3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F450F78D-75F5-445F-BC7D-9B468CC8C27C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F450F78D-75F5-445F-BC7D-9B468CC8C27C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F450F78D-75F5-445F-BC7D-9B468CC8C27C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F450F78D-75F5-445F-BC7D-9B468CC8C27C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,10 +8,8 @@ namespace OTB.Localization
 {
     public interface ILocalization
     {
-        ILocalization Initialize { get; }
+        string GetMessage(string resourceFile, string resourceName, string culture = null);
 
-        string GetMessage(string resource);
-
-        string GetLabel(string resource);
+        string GetLabel(string resourceFile, string resourceName, string culture = null);
     }
 }

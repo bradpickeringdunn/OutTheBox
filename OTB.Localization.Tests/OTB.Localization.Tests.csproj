@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{76945DB9-AD67-4B38-AC85-728FD17A2F3B}</ProjectGuid>
+    <ProjectGuid>{F450F78D-75F5-445F-BC7D-9B468CC8C27C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OTB.Common.Tests</RootNamespace>
-    <AssemblyName>OTB.Common.Tests</AssemblyName>
+    <RootNamespace>OTB.Localization.Tests</RootNamespace>
+    <AssemblyName>OTB.Localization.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,26 +49,46 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
-          <Private>False</Private>
-        </Reference>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="CodeValidation\GuardTestFixture.cs" />
-    <Compile Include="Extensions\ObjectExtensionsTestFixture.cs" />
-    <Compile Include="Extensions\StringExtensionsTestFixture.cs" />
+    <Compile Include="LocalizationTestFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestResource_en-GB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestResource_en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TestResource_af-ZA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestResource_af-ZA.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OTB.Common\OTB.Common.csproj">
       <Project>{26fd68a8-d6c7-4c52-8caa-7a1855012495}</Project>
       <Name>OTB.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\OTB.Localization\OTB.Localization.csproj">
+      <Project>{31ab146d-7a6d-44a1-86d3-f7a8fbbb9614}</Project>
+      <Name>OTB.Localization</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <EmbeddedResource Include="TestResource_en-GB.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TestResource_en-GB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestResource_af-ZA.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TestResource_af-ZA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

@@ -13,5 +13,17 @@
 
             return result;
         }
+
+        public static bool IsNotNull(this object @object)
+        {
+            var result = false;
+
+            if (@object != null)
+            {
+                result = true;
+            }
+
+            return result;
+        }
     }
 }
