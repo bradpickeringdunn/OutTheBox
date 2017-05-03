@@ -31,5 +31,25 @@ namespace System
 
             return result;
         }
+
+        /// <summary>
+        /// Determins is a string is null
+        /// </summary>
+        public static bool IsNotNull(this string @string)
+        {
+            return @string != null ? true : false;
+        }
+        
+        public static string FormatLiteralArguments(this string @string, params object[] args)
+        {
+            var result = @string;
+
+            if (args.Any())
+            {
+                result = string.Format(@string, args);
+            }
+
+            return result;
+        }
     }
 }
