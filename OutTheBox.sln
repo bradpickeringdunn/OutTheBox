@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTB.Tests", "OTB.Tests\OTB.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTB.WCF", "OTB.WCF\OTB.WCF.csproj", "{A06E4626-5D86-4129-8CAD-7E6D2E4AAFC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTB.RavenDB", "OTB.RavenDB\OTB.RavenDB.csproj", "{F5E6131F-9CA6-482F-B243-DCBB3ECDDE8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{A06E4626-5D86-4129-8CAD-7E6D2E4AAFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A06E4626-5D86-4129-8CAD-7E6D2E4AAFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A06E4626-5D86-4129-8CAD-7E6D2E4AAFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5E6131F-9CA6-482F-B243-DCBB3ECDDE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E6131F-9CA6-482F-B243-DCBB3ECDDE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E6131F-9CA6-482F-B243-DCBB3ECDDE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E6131F-9CA6-482F-B243-DCBB3ECDDE8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

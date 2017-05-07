@@ -14,7 +14,7 @@ namespace OTB.Common.Tests.CodeValidation
 
             try
             {
-                Guard.ArgumentNotNull(argument, "argument");
+                Guard.ArgumentNotNull(argument);
             }
             catch(Exception ex)
             {
@@ -29,7 +29,7 @@ namespace OTB.Common.Tests.CodeValidation
 
             try
             {
-                Guard.ArgumentNotNull(argument, "argument");
+                Guard.ArgumentNotNull(argument);
             }
             catch (Exception ex)
             {

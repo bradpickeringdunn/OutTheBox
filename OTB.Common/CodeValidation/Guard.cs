@@ -11,13 +11,37 @@ namespace OTB.Common.CodeValidation
 {
     public static class Guard
     {
-        public static void ArgumentNotNull(object argument, string argumentName)
+        public static void ArgumentNotNull(object argument)
         {
             if (argument.IsNull())
             {
-                var exceptionMessage = GetExceptioningClassInformation(argumentName);
+                var type = argument.GetType();
 
-                throw new ArgumentNullException(argumentName, exceptionMessage);
+                var exceptionMessage = GetExceptioningClassInformation(type.Name);
+
+                throw new ArgumentNullException(type.Name, exceptionMessage);
+            }
+        }
+
+        public static void InstanceNotNull(object argument, string exceptionMessage)
+        {
+            if (argument.IsNull())
+            {
+                var type = argument.GetType();
+                
+                throw new ArgumentNullException(type.Name, exceptionMessage);
+            }
+        }
+
+        public static void InstanceNotNull(object argument)
+        {
+            if (argument.IsNull())
+            {
+                var type = argument.GetType();
+
+                var exceptionMessage = GetExceptioningClassInformation(type.Name);
+
+                throw new ArgumentNullException(type.Name, exceptionMessage);
             }
         }
 
